@@ -41,13 +41,7 @@ module.exports = React.createClass({
 
 	render: function () {
 		return (
-			<li role="tab"
-				id={this.props.id}
-				classNames={this.getClassNames()}
-				aria-selected={this.props.selected ? 'true' : 'false'}
-				aria-expanded={this.props.selected ? 'true' : 'false'}
-				aria-controls={this.props.panelId}
-      >
+			<li role="tab" id={this.props.id} classNames={this.getClassNames()} aria-selected={this.props.selected ? 'true' : 'false'} aria-expanded={this.props.selected ? 'true' : 'false'} aria-controls={this.props.panelId}>
         {this.props.children}
       </li>
 		);
