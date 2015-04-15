@@ -28,9 +28,6 @@
     "a11y",
     "react-component"
   ],
-  "browserify": {
-    "transform": [ "reactify" ]
-  },
   "devDependencies": {
     "envify": "^3.2.0",
     "jsx-loader": "^0.12.2",
@@ -38,6 +35,7 @@
     "reactify": "^0.17.1"
   },
   "dependencies": {
+    "classnames": "^1.2.0",
     "js-stylesheet": "0.0.1",
     "react": "^0.12.1"
   }

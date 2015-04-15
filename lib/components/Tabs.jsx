@@ -3,6 +3,7 @@ var React = require('react/addons');
 var invariant = require('react/lib/invariant');
 var jss = require('js-stylesheet');
 var uuid = require('../helpers/uuid');
+var classNames = require('classnames');
 
 // Determine if a node from event.target is a Tab element
 function isTabNode(node) {
@@ -200,9 +201,13 @@ module.exports = React.createClass({
 
   },
 
+  getClassNames: function() {
+  	classNames('react-tabs',this.props.classNames)
+  },
+
 	render: function () {	
 		return (
-			<div className="react-tabs"
+			<div className={this.className()}
 				onClick={this.handleClick}
 				onKeyDown={this.handleKeyDown}
       >
